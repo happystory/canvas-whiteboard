@@ -7,6 +7,9 @@
     var clear = document.getElementById('clear');
     var download = document.getElementById('download');
 
+    // context.fillStyle = '#fff'
+    // context.fillRect(0,0,canvas.width,canvas.height)
+
     var current = {
         color: 'black'
     };
