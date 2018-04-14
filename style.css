@@ -1,12 +1,9 @@
-* {
-    box-sizing: border-box;
-}
-
 html,
 body {
     height: 100%;
     margin: 0;
     padding: 0;
+    overflow: hidden;
 }
 
 #canvas {
@@ -25,10 +22,15 @@ body {
 
 .color {
     display: inline-block;
-    height: 36px;
-    width: 36px;
+    height: 24px;
+    width: 24px;
     border-radius: 50%;
     cursor: pointer;
+    border: 2px solid #fff;
+}
+
+.color.active {
+    border-color: orange;
 }
 
 .color.black {
@@ -51,9 +53,25 @@ body {
     background-color: yellow;
 }
 
-#eraser {
+.brush {
     position: fixed;
     left: 0;
+    bottom: 0;
+    height: 24px;
+}
+
+.brush .iconfont {
+    padding: 0 5px;
+    transition: all .3s ease-in-out;
+}
+
+.brush .iconfont.active {
+    color: red;
+}
+
+.clear {
+    position: fixed;
+    right: 0;
     bottom: 0;
     height: 24px;
 }

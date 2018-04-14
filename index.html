@@ -4,20 +4,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <title>canvas画板</title>
+    <title>我的画板</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_628584_6c7hrqltovo0f6r.css">
 </head>
 
 <body>
     <canvas id="canvas"></canvas>
     <div class="colors">
-        <div class="color black"></div>
+        <div class="color black active"></div>
         <div class="color red"></div>
         <div class="color green"></div>
         <div class="color blue"></div>
         <div class="color yellow"></div>
     </div>
-    <button id="eraser">画笔</button>
+    <button class="brush">
+        <i id="pen" class="iconfont icon-pen active"></i>
+        <i id="eraser" class="iconfont icon-eraser"></i>
+    </button>
+    <button class="clear">
+        <i id="clear" class="iconfont icon-clear"></i>
+        <i id="download" class="iconfont icon-download"></i>
+    </button>
     <script src="./main.js"></script>
 </body>
 
